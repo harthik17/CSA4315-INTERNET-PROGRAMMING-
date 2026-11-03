@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bus Ticket Booking System</title>
+</head>
+
+<body>
+
+<center>
+
+<h1>ONLINE BUS TICKET BOOKING SYSTEM</h1>
+
+<a href="#home">Home</a> |
+<a href="#register">Register</a> |
+<a href="#login">Login</a> |
+<a href="#search">Search Bus</a> |
+<a href="#booking">Book Ticket</a> |
+<a href="#history">Booking History</a> |
+<a href="#comments">Comments</a> |
+<a href="#admin">Admin</a>
+
+</center>
+
+<hr>
+
+<h2 id="home">Welcome</h2>
+
+<p>
+The Online Bus Ticket Booking System allows users to search buses,
+check available seats, book tickets, cancel tickets and view booking history.
+</p>
+
+<h3>Bus Categories</h3>
+
+<ul>
+    <li>Volvo</li>
+    <li>Sleeper Coach</li>
+    <li>AC Coach</li>
+    <li>Non-AC Coach</li>
+</ul>
+
+<hr>
+
+<h2 id="register">User Registration</h2>
+
+<form>
+
+Name:
+<input type="text" required>
+
+<br><br>
+
+Email:
+<input type="email" required>
+
+<br><br>
+
+Phone:
+<input type="text">
+
+<br><br>
+
+Password:
+<input type="password" required>
+
+<br><br>
+
+<input type="submit" value="Register">
+
+</form>
+
+<hr>
+
+<h2 id="login">User Login</h2>
+
+<form>
+
+Email:
+<input type="email">
+
+<br><br>
+
+Password:
+<input type="password">
+
+<br><br>
+
+<input type="submit" value="Login">
+
+</form>
+
+<p>
+<a href="#">Forgot Password?</a>
+</p>
+
+<hr>
+
+<h2 id="search">Search Bus</h2>
+
+<form>
+
+From:
+<input type="text" placeholder="Chennai">
+
+<br><br>
+
+To:
+<input type="text" placeholder="Bangalore">
+
+<br><br>
+
+Journey Date:
+<input type="date">
+
+<br><br>
+
+Time:
+<input type="time">
+
+<br><br>
+
+Bus Type:
+
+<select>
+    <option>Volvo</option>
+    <option>Sleeper Coach</option>
+    <option>AC Coach</option>
+    <option>Non-AC Coach</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Search Bus">
+
+</form>
+
+<h3>Available Buses</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Bus No</th>
+    <th>Bus Type</th>
+    <th>From</th>
+    <th>To</th>
+    <th>Departure</th>
+    <th>Arrival</th>
+    <th>Seats</th>
+    <th>Fare</th>
+</tr>
+
+<tr>
+    <td>BUS101</td>
+    <td>Volvo</td>
+    <td>Chennai</td>
+    <td>Bangalore</td>
+    <td>08:00 PM</td>
+    <td>06:00 AM</td>
+    <td>25</td>
+    <td>₹900</td>
+</tr>
+
+<tr>
+    <td>BUS202</td>
+    <td>Sleeper</td>
+    <td>Chennai</td>
+    <td>Hyderabad</td>
+    <td>07:00 PM</td>
+    <td>07:00 AM</td>
+    <td>18</td>
+    <td>₹1200</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 id="booking">Book Bus Ticket</h2>
+
+<form>
+
+Bus Number:
+<input type="text">
+
+<br><br>
+
+Passenger Name:
+<input type="text">
+
+<br><br>
+
+Age:
+<input type="number">
+
+<br><br>
+
+Gender:
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+
+<br><br>
+
+Seat Number:
+
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+
+<br><br>
+
+Email:
+<input type="email">
+
+<br><br>
+
+Phone:
+<input type="text">
+
+<br><br>
+
+<input type="submit" value="Book Ticket">
+
+</form>
+
+<hr>
+
+<h2>Ticket Payment</h2>
+
+<form>
+
+Amount:
+<input type="number" value="900">
+
+<br><br>
+
+Payment Method:
+
+<select>
+    <option>UPI</option>
+    <option>Debit Card</option>
+    <option>Credit Card</option>
+    <option>Cash</option>
+</select>
+
+<br><br>
+
+Card / UPI Number:
+<input type="text">
+
+<br><br>
+
+<input type="submit" value="Pay Now">
+
+</form>
+
+<hr>
+
+<h2 id="history">My Booking History</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Ticket ID</th>
+    <th>Bus</th>
+    <th>Route</th>
+    <th>Date</th>
+    <th>Seat</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>BT1001</td>
+    <td>BUS101</td>
+    <td>Chennai - Bangalore</td>
+    <td>10-11-2026</td>
+    <td>5</td>
+    <td>Confirmed</td>
+</tr>
+
+</table>
+
+<br>
+
+<button>Cancel Ticket</button>
+
+<hr>
+
+<h2 id="comments">Comments</h2>
+
+<form>
+
+Name:
+<input type="text">
+
+<br><br>
+
+Bus Number:
+<input type="text">
+
+<br><br>
+
+Comment:
+<br>
+
+<textarea rows="5" cols="40"></textarea>
+
+<br><br>
+
+<input type="submit" value="Post Comment">
+
+</form>
+
+<hr>
+
+<h2 id="admin">Administrator Login</h2>
+
+<form>
+
+Username:
+<input type="text">
+
+<br><br>
+
+Password:
+<input type="password">
+
+<br><br>
+
+<input type="submit" value="Login">
+
+</form>
+
+<h3>Manage Bus Category</h3>
+
+<form>
+
+Bus Category:
+<select>
+    <option>Volvo</option>
+    <option>Sleeper Coach</option>
+    <option>AC Coach</option>
+    <option>Non-AC Coach</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Update Category">
+
+</form>
+
+<h3>Update Bus Information</h3>
+
+<form>
+
+Bus Number:
+<input type="text">
+
+<br><br>
+
+Bus Type:
+<input type="text">
+
+<br><br>
+
+Route:
+<input type="text">
+
+<br><br>
+
+Description:
+<br>
+
+<textarea rows="4" cols="40"></textarea>
+
+<br><br>
+
+Available Seats:
+<input type="number">
+
+<br><br>
+
+Bus Photo:
+<input type="file">
+
+<br><br>
+
+<input type="submit" value="Update Bus">
+
+</form>
+
+<h3>Registered Users</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>User ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+</tr>
+
+<tr>
+    <td>U001</td>
+    <td>Harthik</td>
+    <td>harthik@example.com</td>
+    <td>9876543210</td>
+</tr>
+
+</table>
+
+<h3>Booking Report</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Ticket ID</th>
+    <th>Bus</th>
+    <th>Route</th>
+    <th>Passenger</th>
+    <th>Amount</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>BT1001</td>
+    <td>BUS101</td>
+    <td>Chennai-Bangalore</td>
+    <td>Harthik</td>
+    <td>₹900</td>
+    <td>Confirmed</td>
+</tr>
+
+<tr>
+    <td>BT1002</td>
+    <td>BUS202</td>
+    <td>Chennai-Hyderabad</td>
+    <td>Rahul</td>
+    <td>₹1200</td>
+    <td>Cancelled</td>
+</tr>
+
+</table>
+
+<hr>
+
+<center>
+
+<p>© 2026 Online Bus Ticket Booking System</p>
+
+</center>
+
+</body>
+</html>

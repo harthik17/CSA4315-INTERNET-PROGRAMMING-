@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Library Management System</title>
+</head>
+
+<body>
+
+<center>
+    <h1>ONLINE LIBRARY MANAGEMENT SYSTEM</h1>
+
+    <a href="#home">Home</a> |
+    <a href="#login">Login</a> |
+    <a href="#register">Register</a> |
+    <a href="#search">Search Books</a> |
+    <a href="#history">Borrow History</a> |
+    <a href="#fine">Check Fine</a> |
+    <a href="#material">Study Material</a> |
+    <a href="#profile">My Profile</a> |
+    <a href="#admin">Admin</a> |
+    <a href="#contact">Contact</a>
+</center>
+
+<hr>
+
+<!-- HOME -->
+
+<h2 id="home">Welcome to Our Library</h2>
+
+<p>
+The Online Library Management System helps students and librarians
+to manage books, borrowing, returning, fines and study materials.
+</p>
+
+<h3>Library Services</h3>
+
+<ul>
+    <li>Search Books</li>
+    <li>View Book Details</li>
+    <li>Borrow Books</li>
+    <li>Return Books</li>
+    <li>Check Fine</li>
+    <li>View Borrow History</li>
+    <li>Search Study Materials</li>
+    <li>Download Study Materials</li>
+</ul>
+
+<hr>
+
+<!-- USER LOGIN -->
+
+<h2 id="login">User Login</h2>
+
+<form>
+
+    Email:
+    <input type="email" required>
+
+    <br><br>
+
+    Password:
+    <input type="password" required>
+
+    <br><br>
+
+    <input type="submit" value="Login">
+
+</form>
+
+<p><a href="#register">New User? Register Here</a></p>
+
+<hr>
+
+<!-- USER REGISTER -->
+
+<h2 id="register">User Registration</h2>
+
+<form>
+
+    Name:
+    <input type="text" required>
+
+    <br><br>
+
+    Register Number:
+    <input type="text" required>
+
+    <br><br>
+
+    Email:
+    <input type="email" required>
+
+    <br><br>
+
+    Password:
+    <input type="password" required>
+
+    <br><br>
+
+    Department:
+
+    <select>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Electronics</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+    </select>
+
+    <br><br>
+
+    Year:
+
+    <select>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+<hr>
+
+<!-- SEARCH BOOK -->
+
+<h2 id="search">Search Book</h2>
+
+<form>
+
+    Book Name:
+    <input type="text" placeholder="Enter book name">
+
+    <br><br>
+
+    Author:
+    <input type="text" placeholder="Enter author">
+
+    <br><br>
+
+    Category:
+
+    <select>
+        <option>All</option>
+        <option>Programming</option>
+        <option>Database</option>
+        <option>Networking</option>
+        <option>Artificial Intelligence</option>
+        <option>Mathematics</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Search Book">
+
+</form>
+
+<h3>Available Books</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Book ID</th>
+    <th>Book Name</th>
+    <th>Author</th>
+    <th>Category</th>
+    <th>Year</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>B001</td>
+    <td>Python Programming</td>
+    <td>John Smith</td>
+    <td>Programming</td>
+    <td>2024</td>
+    <td>Available</td>
+</tr>
+
+<tr>
+    <td>B002</td>
+    <td>Database Management System</td>
+    <td>Raghu Ramakrishnan</td>
+    <td>Database</td>
+    <td>2023</td>
+    <td>Issued</td>
+</tr>
+
+<tr>
+    <td>B003</td>
+    <td>Computer Networks</td>
+    <td>Andrew S. Tanenbaum</td>
+    <td>Networking</td>
+    <td>2022</td>
+    <td>Available</td>
+</tr>
+
+<tr>
+    <td>B004</td>
+    <td>Artificial Intelligence</td>
+    <td>Stuart Russell</td>
+    <td>AI</td>
+    <td>2024</td>
+    <td>Available</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- BOOK DETAILS -->
+
+<h2 id="details">Book Details</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Book ID</th>
+    <td>B001</td>
+</tr>
+
+<tr>
+    <th>Book Name</th>
+    <td>Python Programming</td>
+</tr>
+
+<tr>
+    <th>Author</th>
+    <td>John Smith</td>
+</tr>
+
+<tr>
+    <th>Publisher</th>
+    <td>ABC Publications</td>
+</tr>
+
+<tr>
+    <th>Edition</th>
+    <td>3rd Edition</td>
+</tr>
+
+<tr>
+    <th>Category</th>
+    <td>Programming</td>
+</tr>
+
+<tr>
+    <th>Availability</th>
+    <td>Available</td>
+</tr>
+
+</table>
+
+<br>
+
+<button>Issue Book</button>
+
+<hr>
+
+<!-- BORROW HISTORY -->
+
+<h2 id="history">My Borrow History</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Book ID</th>
+    <th>Book Name</th>
+    <th>Issue Date</th>
+    <th>Expected Return Date</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>B001</td>
+    <td>Python Programming</td>
+    <td>20-10-2026</td>
+    <td>03-11-2026</td>
+    <td>Issued</td>
+</tr>
+
+<tr>
+    <td>B005</td>
+    <td>Operating Systems</td>
+    <td>01-09-2026</td>
+    <td>15-09-2026</td>
+    <td>Returned</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- FINE -->
+
+<h2 id="fine">Check Fine</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Book</th>
+    <th>Due Date</th>
+    <th>Return Date</th>
+    <th>Fine</th>
+</tr>
+
+<tr>
+    <td>Operating Systems</td>
+    <td>15-09-2026</td>
+    <td>18-09-2026</td>
+    <td>₹30</td>
+</tr>
+
+</table>
+
+<p><b>Total Fine: ₹30</b></p>
+
+<hr>
+
+<!-- STUDY MATERIAL -->
+
+<h2 id="material">Study Material</h2>
+
+<form>
+
+    Select Year:
+
+    <select>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <br><br>
+
+    Select Semester:
+
+    <select>
+        <option>Semester 1</option>
+        <option>Semester 2</option>
+        <option>Semester 3</option>
+        <option>Semester 4</option>
+        <option>Semester 5</option>
+        <option>Semester 6</option>
+        <option>Semester 7</option>
+        <option>Semester 8</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Search Material">
+
+</form>
+
+<h3>Available Study Materials</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Subject</th>
+    <th>Year</th>
+    <th>Semester</th>
+    <th>Material</th>
+</tr>
+
+<tr>
+    <td>Computer Networks</td>
+    <td>3rd Year</td>
+    <td>Semester 5</td>
+    <td><a href="#">Download</a></td>
+</tr>
+
+<tr>
+    <td>Database Management System</td>
+    <td>3rd Year</td>
+    <td>Semester 5</td>
+    <td><a href="#">Download</a></td>
+</tr>
+
+<tr>
+    <td>Operating Systems</td>
+    <td>3rd Year</td>
+    <td>Semester 6</td>
+    <td><a href="#">Download</a></td>
+</tr>
+
+<tr>
+    <td>Artificial Intelligence</td>
+    <td>4th Year</td>
+    <td>Semester 7</td>
+    <td><a href="#">Download</a></td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- MY PROFILE -->
+
+<h2 id="profile">My Profile</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Name</th>
+    <td>Harthik Reddy</td>
+</tr>
+
+<tr>
+    <th>Register Number</th>
+    <td>2024CS001</td>
+</tr>
+
+<tr>
+    <th>Email</th>
+    <td>harthik@example.com</td>
+</tr>
+
+<tr>
+    <th>Department</th>
+    <td>Computer Science</td>
+</tr>
+
+<tr>
+    <th>Year</th>
+    <td>3rd Year</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- ADMIN LOGIN -->
+
+<h2 id="admin">Librarian Admin Login</h2>
+
+<form>
+
+    Username:
+    <input type="text" required>
+
+    <br><br>
+
+    Password:
+    <input type="password" required>
+
+    <br><br>
+
+    <input type="submit" value="Admin Login">
+
+</form>
+
+<hr>
+
+<!-- ADMIN DASHBOARD -->
+
+<h2>Admin Dashboard</h2>
+
+<h3>Add Book</h3>
+
+<form>
+
+    Book ID:
+    <input type="text">
+
+    <br><br>
+
+    Book Name:
+    <input type="text">
+
+    <br><br>
+
+    Author:
+    <input type="text">
+
+    <br><br>
+
+    Category:
+    <input type="text">
+
+    <br><br>
+
+    Year:
+    <input type="number">
+
+    <br><br>
+
+    <input type="submit" value="Add Book">
+
+</form>
+
+<h3>Manage Books</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Book ID</th>
+    <th>Book Name</th>
+    <th>Author</th>
+    <th>Action</th>
+</tr>
+
+<tr>
+    <td>B001</td>
+    <td>Python Programming</td>
+    <td>John Smith</td>
+    <td>
+        <button>Update</button>
+        <button>Delete</button>
+    </td>
+</tr>
+
+<tr>
+    <td>B002</td>
+    <td>Database Management System</td>
+    <td>Raghu Ramakrishnan</td>
+    <td>
+        <button>Update</button>
+        <button>Delete</button>
+    </td>
+</tr>
+
+</table>
+
+<h3>Issue Book</h3>
+
+<form>
+
+    Student Register Number:
+    <input type="text">
+
+    <br><br>
+
+    Book ID:
+    <input type="text">
+
+    <br><br>
+
+    Issue Date:
+    <input type="date">
+
+    <br><br>
+
+    Expected Return Date:
+    <input type="date">
+
+    <br><br>
+
+    <input type="submit" value="Issue Book">
+
+</form>
+
+<h3>Return Book Status</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Student</th>
+    <th>Book</th>
+    <th>Issue Date</th>
+    <th>Return Date</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>2024CS001</td>
+    <td>Python Programming</td>
+    <td>20-10-2026</td>
+    <td>03-11-2026</td>
+    <td>Issued</td>
+</tr>
+
+<tr>
+    <td>2024CS002</td>
+    <td>Operating Systems</td>
+    <td>01-09-2026</td>
+    <td>15-09-2026</td>
+    <td>Returned</td>
+</tr>
+
+</table>
+
+<h3>Make Fine</h3>
+
+<form>
+
+    Student Register Number:
+    <input type="text">
+
+    <br><br>
+
+    Fine Amount:
+    <input type="number">
+
+    <br><br>
+
+    <input type="submit" value="Apply Fine">
+
+</form>
+
+<h3>Update Study Material</h3>
+
+<form>
+
+    Material Name:
+    <input type="text">
+
+    <br><br>
+
+    Year:
+    <select>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <br><br>
+
+    Semester:
+    <select>
+        <option>Semester 1</option>
+        <option>Semester 2</option>
+        <option>Semester 3</option>
+        <option>Semester 4</option>
+        <option>Semester 5</option>
+        <option>Semester 6</option>
+        <option>Semester 7</option>
+        <option>Semester 8</option>
+    </select>
+
+    <br><br>
+
+    Material File:
+    <input type="file">
+
+    <br><br>
+
+    <input type="submit" value="Upload Material">
+
+</form>
+
+<h3>View Users</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Register Number</th>
+    <th>Name</th>
+    <th>Department</th>
+    <th>Email</th>
+</tr>
+
+<tr>
+    <td>2024CS001</td>
+    <td>Harthik Reddy</td>
+    <td>Computer Science</td>
+    <td>harthik@example.com</td>
+</tr>
+
+<tr>
+    <td>2024CS002</td>
+    <td>Rahul</td>
+    <td>Information Technology</td>
+    <td>rahul@example.com</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- CONTACT -->
+
+<h2 id="contact">Contact Library</h2>
+
+<form>
+
+    Name:
+    <input type="text">
+
+    <br><br>
+
+    Email:
+    <input type="email">
+
+    <br><br>
+
+    Subject:
+    <input type="text">
+
+    <br><br>
+
+    Message:
+    <br>
+
+    <textarea rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Send Message">
+
+</form>
+
+<hr>
+
+<center>
+    <p>© 2026 Online Library Management System</p>
+</center>
+
+</body>
+</html>
