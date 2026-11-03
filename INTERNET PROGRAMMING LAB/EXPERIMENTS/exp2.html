@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Hotel Room Booking System</title>
+</head>
+
+<body>
+
+<center>
+    <h1>ONLINE HOTEL ROOM BOOKING SYSTEM</h1>
+
+    <a href="#home">Home</a> |
+    <a href="#register">Register</a> |
+    <a href="#login">Login</a> |
+    <a href="#search">Search Hotel</a> |
+    <a href="#rooms">Rooms</a> |
+    <a href="#booking">Book Room</a> |
+    <a href="#history">Booking History</a> |
+    <a href="#review">Reviews</a> |
+    <a href="#admin">Admin</a> |
+    <a href="#contact">Contact</a>
+</center>
+
+<hr>
+
+<h2 id="home">Welcome to Hotel Booking</h2>
+
+<p>
+The Online Hotel Room Booking System allows users to search hotels,
+check room availability, book rooms, make payments and manage bookings.
+</p>
+
+<h3>Hotel Services</h3>
+
+<ul>
+    <li>Hotel Search</li>
+    <li>Room Availability</li>
+    <li>Online Room Booking</li>
+    <li>Booking History</li>
+    <li>Booking Cancellation</li>
+    <li>Customer Reviews</li>
+    <li>Online Payment</li>
+    <li>Customer Support</li>
+</ul>
+
+<hr>
+
+<h2 id="register">User Registration</h2>
+
+<form>
+
+    Name:
+    <input type="text" required>
+    <br><br>
+
+    Email:
+    <input type="email" required>
+    <br><br>
+
+    Phone:
+    <input type="text">
+    <br><br>
+
+    Password:
+    <input type="password" required>
+    <br><br>
+
+    Address:
+    <textarea rows="3" cols="30"></textarea>
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+<hr>
+
+<h2 id="login">User Login</h2>
+
+<form>
+
+    Email:
+    <input type="email" required>
+    <br><br>
+
+    Password:
+    <input type="password" required>
+    <br><br>
+
+    <input type="submit" value="Login">
+
+</form>
+
+<hr>
+
+<h2 id="search">Search Hotel</h2>
+
+<form>
+
+    Destination:
+    <input type="text" placeholder="Chennai">
+    <br><br>
+
+    Check-in Date:
+    <input type="date">
+    <br><br>
+
+    Check-out Date:
+    <input type="date">
+    <br><br>
+
+    Guests:
+    <input type="number" min="1" value="1">
+    <br><br>
+
+    <input type="submit" value="Search Hotel">
+
+</form>
+
+<hr>
+
+<h2 id="rooms">Room Types</h2>
+
+<table border="1" cellpadding="12">
+
+<tr>
+    <th>Room Type</th>
+    <th>Price / Night</th>
+    <th>Guests</th>
+    <th>Amenities</th>
+    <th>Availability</th>
+</tr>
+
+<tr>
+    <td>Single Room</td>
+    <td>₹1500</td>
+    <td>1</td>
+    <td>Wi-Fi, TV, AC</td>
+    <td>Available</td>
+</tr>
+
+<tr>
+    <td>Double Room</td>
+    <td>₹2500</td>
+    <td>2</td>
+    <td>Wi-Fi, TV, AC, Breakfast</td>
+    <td>Available</td>
+</tr>
+
+<tr>
+    <td>Deluxe Room</td>
+    <td>₹3500</td>
+    <td>3</td>
+    <td>Wi-Fi, TV, AC, Breakfast</td>
+    <td>Available</td>
+</tr>
+
+<tr>
+    <td>Suite Room</td>
+    <td>₹5000</td>
+    <td>4</td>
+    <td>Wi-Fi, TV, AC, Breakfast, Mini Bar</td>
+    <td>Available</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 id="booking">Book a Room</h2>
+
+<form>
+
+    Guest Name:
+    <input type="text" required>
+    <br><br>
+
+    Email:
+    <input type="email">
+    <br><br>
+
+    Room Type:
+
+    <select>
+        <option>Single Room</option>
+        <option>Double Room</option>
+        <option>Deluxe Room</option>
+        <option>Suite Room</option>
+    </select>
+
+    <br><br>
+
+    Check-in Date:
+    <input type="date">
+    <br><br>
+
+    Check-out Date:
+    <input type="date">
+    <br><br>
+
+    Number of Guests:
+    <input type="number" min="1">
+    <br><br>
+
+    Special Request:
+    <textarea rows="3" cols="40"></textarea>
+    <br><br>
+
+    <input type="submit" value="Book Room">
+
+</form>
+
+<hr>
+
+<h2 id="payment">Payment</h2>
+
+<form>
+
+    Booking Amount:
+    <input type="number" value="2500">
+    <br><br>
+
+    Payment Method:
+
+    <select>
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+        <option>UPI</option>
+        <option>Cash</option>
+    </select>
+
+    <br><br>
+
+    Card / UPI Number:
+    <input type="text">
+    <br><br>
+
+    <input type="submit" value="Make Payment">
+
+</form>
+
+<hr>
+
+<h2 id="history">My Booking History</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Booking ID</th>
+    <th>Room</th>
+    <th>Check-in</th>
+    <th>Check-out</th>
+    <th>Guests</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>HT1001</td>
+    <td>Deluxe Room</td>
+    <td>10-11-2026</td>
+    <td>12-11-2026</td>
+    <td>2</td>
+    <td>Confirmed</td>
+</tr>
+
+</table>
+
+<br>
+
+<button>Modify Booking</button>
+<button>Cancel Booking</button>
+
+<hr>
+
+<h2 id="review">Customer Reviews</h2>
+
+<form>
+
+    Name:
+    <input type="text">
+    <br><br>
+
+    Rating:
+
+    <select>
+        <option>★★★★★</option>
+        <option>★★★★</option>
+        <option>★★★</option>
+        <option>★★</option>
+        <option>★</option>
+    </select>
+
+    <br><br>
+
+    Review:
+    <br>
+
+    <textarea rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Submit Review">
+
+</form>
+
+<hr>
+
+<h2 id="admin">Administrator Login</h2>
+
+<form>
+
+    Username:
+    <input type="text">
+    <br><br>
+
+    Password:
+    <input type="password">
+    <br><br>
+
+    <input type="submit" value="Admin Login">
+
+</form>
+
+<h3>Admin Room Management</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Room Type</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Available</th>
+</tr>
+
+<tr>
+    <td>Single Room</td>
+    <td>20</td>
+    <td>₹1500</td>
+    <td>12</td>
+</tr>
+
+<tr>
+    <td>Double Room</td>
+    <td>30</td>
+    <td>₹2500</td>
+    <td>20</td>
+</tr>
+
+<tr>
+    <td>Deluxe Room</td>
+    <td>15</td>
+    <td>₹3500</td>
+    <td>8</td>
+</tr>
+
+<tr>
+    <td>Suite Room</td>
+    <td>10</td>
+    <td>₹5000</td>
+    <td>6</td>
+</tr>
+
+</table>
+
+<h3>Admin Booking Management</h3>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Booking ID</th>
+    <th>Customer</th>
+    <th>Room</th>
+    <th>Date</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <td>HT1001</td>
+    <td>Harthik</td>
+    <td>Deluxe</td>
+    <td>10-11-2026</td>
+    <td>Confirmed</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>About Us</h2>
+
+<p>
+Our hotel provides comfortable and affordable accommodation for
+business and leisure travelers.
+</p>
+
+<hr>
+
+<h2>Customer Service Q&A</h2>
+
+<h3>Q: Can I cancel my booking?</h3>
+<p>Yes. Bookings can be cancelled according to the hotel cancellation policy.</p>
+
+<h3>Q: Can I modify my booking?</h3>
+<p>Yes. Users can modify their booking before the allowed cancellation period.</p>
+
+<h3>Q: What payment methods are available?</h3>
+<p>Credit Card, Debit Card, UPI and Cash.</p>
+
+<hr>
+
+<h2>Local Travel Guide</h2>
+
+<ul>
+    <li>Nearby Tourist Places</li>
+    <li>Restaurants</li>
+    <li>Shopping Areas</li>
+    <li>Public Transport</li>
+</ul>
+
+<hr>
+
+<h2>Privacy Policy</h2>
+
+<p>
+User information is used only for booking, account management and
+customer service purposes. Personal information should not be shared
+with unauthorized persons.
+</p>
+
+<hr>
+
+<h2 id="contact">Contact Us</h2>
+
+<form>
+
+    Name:
+    <input type="text">
+    <br><br>
+
+    Email:
+    <input type="email">
+    <br><br>
+
+    Message:
+    <br>
+
+    <textarea rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Send Message">
+
+</form>
+
+<hr>
+
+<center>
+    <p>© 2026 Online Hotel Room Booking System</p>
+</center>
+
+</body>
+</html>
